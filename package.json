@@ -1,21 +1,21 @@
 {
-	"name": "contextio",
-	"description": "Official Node.js client library for the Context.IO Email API",
+	"name": "contextio-lite",
+	"description": "Node.js client library for the Context.IO Lite Email API",
 	"keywords": ["email","ContextIO","api","imap","gmail","tools","rest"],
-	"version": "0.4.0",
-	"author": "Bruno Morency <bruno@context.io>",
+	"version": "0.0.1",
+	"author": "Kevin Marshall <info@falicon.com>",
 	"repository": {
 		"type": "git",
-		"url": "http://github.com/ContextIO/ContextIO-node.git"
+		"url": "http://github.com/Falicon/ContextIO-lite-node"
 	},
 	"bugs": {
-		"url": "http://github.com/ContextIO/ContextIO-node/issues",
-		"email": "support@context.io"
+		"url": "http://github.com/Falicon/ContextIO-lite-node/issues",
+		"email": "info@falicon.com"
 	},
 	"devDependencies": {
 		"vows": "0.6.x"
 	},
-	"main": "./lib/ContextIO",
+	"main": "./lib/ContextIO-lite",
 	"scripts": { "test": "vows test/*.js --spec" },
 	"engines": {
 		"node": ">= 0.4.12"
