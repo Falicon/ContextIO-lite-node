@@ -29,7 +29,7 @@ Once you install the contextio package, using it in your code is fairly simple:
   });
 ```
  
- The `Client` constructor simply requires your OAuth consumer key and secret. You can also specify the version and endpoint. By default, the client will use the latest stable version of the API (currently 2.0) and http://api.context.io respectively.
+ The `Client` constructor simply requires your OAuth consumer key and secret. You can also specify the version and endpoint. By default, the client will use the latest stable version of the API and http://api.context.io respectively.
  
  Instantiating the client while specifying the API version:
  
@@ -59,7 +59,7 @@ Complete documentation is available on http://context.io/docs/latest and you can
 The design of this library follows the URI structure very closely. For example, to call:
 
 ``` http
-GET /2.0/users?limit=15
+GET /lite/users?limit=15
 ```
 
 you would do:
@@ -74,7 +74,7 @@ ctxioClient.users().get({limit:15}, function (err, response) {
 Making it more general, the equivalent of this generic URI:
 
 ``` http
-METHOD /2.0/RESOURCE/INSTANCE_ID/SUB_RESOURCE?PARAMS
+METHOD /lite/RESOURCE/INSTANCE_ID/SUB_RESOURCE?PARAMS
 ```
 
 would be:
