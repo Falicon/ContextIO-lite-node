@@ -2,7 +2,7 @@
 	"name": "contextio-lite",
 	"description": "Node.js client library for the Context.IO Lite Email API",
 	"keywords": ["email","ContextIO","api","imap","gmail","tools","rest"],
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"author": "Kevin Marshall <info@falicon.com>",
 	"repository": {
 		"type": "git",
