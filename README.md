@@ -34,8 +34,8 @@ Once you install the contextio package, using it in your code is fairly simple:
  Instantiating the client while specifying the API version:
  
 ``` js
-  var ContextIO = require('contextio');
-  var ctxioClient = new ContextIO.Client('2.0', {
+  var ContextIO = require('contextio-lite');
+  var ctxioClient = new ContextIO.Client('lite', {
     key: "YOUR CONTEXT.IO CONSUMER KEY",
     secret: "YOUR CONTEXT.IO CONSUMER SECRET"
   });
@@ -44,8 +44,8 @@ Once you install the contextio package, using it in your code is fairly simple:
 Instantiating the client while specifying the API version and endpoint:
 
 ``` js
-  var ContextIO = require('contextio');
-  var ctxioClient = new ContextIO.Client('2.0', 'https://api.context.io', {
+  var ContextIO = require('contextio-lite');
+  var ctxioClient = new ContextIO.Client('lite', 'https://api.context.io', {
     key: "YOUR CONTEXT.IO CONSUMER KEY",
     secret: "YOUR CONTEXT.IO CONSUMER SECRET"
   });
@@ -59,13 +59,13 @@ Complete documentation is available on http://context.io/docs/latest and you can
 The design of this library follows the URI structure very closely. For example, to call:
 
 ``` http
-GET /2.0/accounts?limit=15
+GET /2.0/users?limit=15
 ```
 
 you would do:
 
 ``` js
-ctxioClient.accounts().get({limit:15}, function (err, response) {
+ctxioClient.users().get({limit:15}, function (err, response) {
 	if (err) throw err;
 	console.log(response.body);
 });
