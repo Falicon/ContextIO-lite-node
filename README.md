@@ -115,8 +115,3 @@ Node.js version
 ---------------
 
 It has been tested on Node.js 0.6.
-
-Examples
---------
-
-Please refer to the test files for an example of every single call.
