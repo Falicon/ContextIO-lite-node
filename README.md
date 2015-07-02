@@ -82,7 +82,16 @@ would be:
 ``` js
 ctxioClient.RESOURCE(INSTANCE_ID).SUB_RESOURCE().METHOD(PARAMS, CALLBACK_FN)
 ```
+
 Note that if the resource name contains an underscore character (eg. connect_tokens), you can use both connect_tokens() or connectTokens() with this library.
+
+Note that attachements and raw messages will be sent as a buffer, so you should handle them accordingly. For example, dump the attachment content to the console:
+
+```
+  req.contextio_client.users('A_USER_ID').emailAccounts('AN_EMAIL_ADDRESS').folders('A_FOLDER').messages('A_MESSAGE_ID').attachments('AN_ATTACHMENT_ID').get(function(err, response){
+    console.log(response.body.toString('utf-8'));
+  });
+```
 
 
 ### Parameters
